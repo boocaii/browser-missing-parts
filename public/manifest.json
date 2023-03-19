@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
 
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
+  "name": "Browser Missing Parts",
+  "description": "Browser Missing Parts",
   "version": "1.0",
 
   "options_ui": {
@@ -26,6 +26,8 @@
   },
 
   "permissions": [
+    "history",
+    "tabs",
     "storage"
   ],
 
