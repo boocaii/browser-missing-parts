@@ -13,6 +13,10 @@ hotkeys('ctrl+l', function (event, handler) {
 	event.preventDefault()
 	show_search_bar();
 });
+hotkeys('ctrl+shift+l', function (event, handler) {
+	event.preventDefault()
+	hide_search_bar();
+});
 
 window.addEventListener('resize', (e) => {
 	const root = get_root();
@@ -164,7 +168,7 @@ function init_search_bar() {
 	})
 
 	p.addEventListener('focusout', function (e) {
-		// hide_search_bar()
+		hide_search_bar()
 	})
 }
 
